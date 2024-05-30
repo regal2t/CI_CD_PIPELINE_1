@@ -16,7 +16,7 @@ services:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
     volumes:
-      - "./db:/var/lib/mysql"
+      - "./db:/entrypoint-initdb.d"
 
   phpmyadmin:
     image: phpmyadmin
